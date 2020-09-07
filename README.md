@@ -1,2 +1,2 @@
-# SBA
-Repo for Excel macros relating to SBA loan processing. 
+# SBA 7(a) Loan Tools
+Excel Macros for evaluating SBA 7(a) program loans for owner replacement acquisitions.
