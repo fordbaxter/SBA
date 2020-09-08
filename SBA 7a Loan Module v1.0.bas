@@ -1,4 +1,3 @@
-Attribute VB_Name = "Module1"
 Public Function get_SBA_7a_Terms(pprice As Double, reprice As Double, sellerfi As Double, workingcap As Double, percentdown As Double, term As String)
 ' percentdown = down payment expressed as a decimal (.15 typical) to calculate loan value
 ' Seller financing is not considered part of the equity UNLESS it is on standby the full life of the loan and does not exceed half the total equity.
@@ -64,14 +63,10 @@ Public Function getClosingCosts(loanamount As Double, percentguaranteed As Doubl
 Dim closingcosts As Double: closingcosts = getGFee(loanamount, percentguaranteed)
 
 If reprice > 0 Then
-    closingcosts = closingcosts + 4000 'cost of RE related items paid by buyer
+    closingcosts = closingcosts + 5000 'cost of RE related items paid by buyer
 End If
 
-closingcosts = closingcosts + 12000 'legal fees
-closingcosts = closingcosts + 3500 'bank fees
-closingcosts = closingcosts + 2500 'other SBA fees
-closingcosts = closingcosts + 1000 'other misc fees and charges
-
+closingcosts = closingcosts + 16500 ' FIB estimated closing costs
 getClosingCosts = closingcosts
 
 End Function
